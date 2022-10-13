@@ -30,16 +30,16 @@
     <ClCompile Include="CreateSkin.cpp">
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
-    <ClCompile Include="Sphere.cpp">
-      <Filter>Quellcodedateien</Filter>
-    </ClCompile>
     <ClCompile Include="LinMove.cpp">
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
-    <ClCompile Include="PointWriter.cpp">
+    <ClCompile Include="Sphere.cpp">
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
     <ClCompile Include="Skin.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="PointWriter.cpp">
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
   </ItemGroup>
@@ -62,16 +62,16 @@
     <ClInclude Include="CreateSkin.hpp">
       <Filter>Header-Dateien</Filter>
     </ClInclude>
-    <ClInclude Include="Sphere.h">
-      <Filter>Header-Dateien</Filter>
-    </ClInclude>
     <ClInclude Include="LinMove.h">
       <Filter>Header-Dateien</Filter>
     </ClInclude>
-    <ClInclude Include="PointWriter.h">
+    <ClInclude Include="Sphere.h">
       <Filter>Header-Dateien</Filter>
     </ClInclude>
     <ClInclude Include="Skin.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="PointWriter.h">
       <Filter>Header-Dateien</Filter>
     </ClInclude>
   </ItemGroup>

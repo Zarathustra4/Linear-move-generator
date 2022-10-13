@@ -1,9 +1,10 @@
 #pragma once
-#include <vector>
+
 #include <string>
 #include <fstream>
+#include <vector>
 #include <iostream>
-#include <set>
+
 #include "mwTPoint3d.hpp"
 
 using cadcam::mwTPoint3d;
@@ -11,17 +12,18 @@ using cadcam::mwTPoint3d;
 class PointWriter
 {
 private:
-
-	std::string filePath;
 	std::ofstream fileWriter;
 
-public:
-	//Constructor
-	PointWriter(std::string);
-	
-	//Default constructor
-	PointWriter();
+	std::string filePath;
 
-	//writes vector elements to the file
-	void writeToFile(std::vector<mwTPoint3d<unsigned long>> points, double delta, mwTPoint3d<double> refPoint, bool firstWrite = false);
+	double delta;
+
+	mwTPoint3d<double> refPoint;
+
+public:
+	PointWriter(std::string fileName, double delta, mwTPoint3d<double> refPoint);
+
+	void writeToFile(std::vector<mwTPoint3d<unsigned long>> points);
+
 };
+

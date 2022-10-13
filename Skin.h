@@ -1,32 +1,60 @@
-#pragma once
-#include "LinMove.h"
-#include "PointWriter.h"
-#include "mwTPoint3d.hpp"
-
-#include <set>
 #include <vector>
-#include <string>
-#include <map>
-#include <array>
+#include <math.h>
+#include <iostream>
+
+#include "mwTPoint3d.hpp"
+#include "Sphere.h"
+
+#pragma once
 
 using cadcam::mwTPoint3d;
+
 class Skin
 {
 private:
+
+	//sizes of grid
 	unsigned long nx;
 	unsigned long ny;
 	unsigned long nz;
 
+	//move points
+	std::vector<mwTPoint3d<double>> movePoints;
+
+	//skin points
+	std::vector<mwTPoint3d<unsigned long>> skinPoints;
+
+	//sphere radius
+	double rad;
+
+	//delta
 	double delta;
-	PointWriter pointWriter;
+
+	//reference point
 	mwTPoint3d<double> refPoint;
 
-	//points of linear move
-	std::map<std::array<unsigned long, 2>, unsigned long> linMovePoints;
+	//default z value, which cannot be displayed
+	double zDefault;
 
 public:
-	//constructor that generates points of skin and write it into file using PointWriter
-	Skin(unsigned long _nx, unsigned long _ny, unsigned long _nz, double delta,
-		std::string fileName, std::map<std::array<unsigned long, 2>, unsigned long> _linMovePoints, mwTPoint3d<double> _refPoint);
+	//constructor
+	Skin(unsigned long gridSize[], std::vector<mwTPoint3d<double>> movePoints, double rad, double delta, mwTPoint3d<double> _refPoint);
+
+	//returns skin points
+	std::vector<mwTPoint3d<unsigned long>> getSkinPoints();
+
+private:
+	//generates skin
+	void generateSkin();
+
+	//returns double value of z
+	double getZ(double x, double y);
+
+	//finds center (perpendicular) for a point
+	mwTPoint3d<double> findCenter(mwTPoint3d<double> start, mwTPoint3d<double> end, mwTPoint3d<double> point);
+
+	//checks whether point is in the segment
+	bool isInSegment(mwTPoint3d<double> point, mwTPoint3d<double> start, mwTPoint3d<double> end);
 
 };
+

@@ -21,11 +21,11 @@ int main(int argc, char* argv[])
 	//Number of points in z direction
 	const unsigned long nz = 100;
 
-	//Distance between points in the point grid (same fo x, y and z directions)
+	//Distance between points in the point grid (same for x, y and z directions)
 	const double delta = 1.;
 
 	//Discrete step for move function calculation
-	const double deltaT = 0.01;
+	const double deltaT = 0.05;
 
 	//Radius of the sphere
 	const double sphereRad = 5.;

@@ -134,7 +134,6 @@
       <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
     </ClCompile>
-    <ClCompile Include="Skin.cpp" />
     <ClCompile Include="LinMove.cpp" />
     <ClCompile Include="mwArcFunction.cpp">
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
@@ -152,11 +151,11 @@
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
     </ClCompile>
     <ClCompile Include="PointWriter.cpp" />
+    <ClCompile Include="Skin.cpp" />
     <ClCompile Include="Sphere.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CreateSkin.hpp" />
-    <ClInclude Include="Skin.h" />
     <ClInclude Include="LinMove.h" />
     <ClInclude Include="mwArcFunction.hpp" />
     <ClInclude Include="mwDiscreteFunction.hpp" />
@@ -164,6 +163,7 @@
     <ClInclude Include="mwIdxRangeException.hpp" />
     <ClInclude Include="mwTPoint3d.hpp" />
     <ClInclude Include="PointWriter.h" />
+    <ClInclude Include="Skin.h" />
     <ClInclude Include="Sphere.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
