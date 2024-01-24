@@ -8,6 +8,6 @@ The project saves body's points in `file.asc` file. Open the file with `PointVis
 
 ![image](https://github.com/Zarathustra4/Linear-move-generator/assets/68013193/9c3f7ce5-dd6a-4737-9f8f-d46e09efb31b)
 
-![image](https://github.com/Zarathustra4/Linear-move-generator/assets/68013193/6634581e-7b53-49b2-91a7-272fd71c8ec6)
+![image](https://github.com/Zarathustra4/Linear-move-generator/assets/68013193/aeb85df9-ec2d-4d09-9109-c48905bb6f18)
 
 You can change the parameters in ```cutShpereMove.cpp``` in `main` function.
