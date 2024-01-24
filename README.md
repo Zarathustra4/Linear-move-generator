@@ -1,7 +1,13 @@
-Creates top view of grid cutted by moving sphere
+# Sphere linear move
 
-![image](https://github.com/Zarathustra4/Linear-move-generator/assets/68013193/2228bccd-646b-4d5d-9175-258a99062466)
+### The task of the project is to create file with points of top view of grid cutted by sphere linear move. 
 
-![image](https://github.com/Zarathustra4/Linear-move-generator/assets/68013193/77879af2-2314-4aa9-8a97-3df16de69603)
+The project saves body's points in `file.asc` file. Open the file with `PointVisualizer_win.exe` to render the 3d body.
 
-![image](https://github.com/Zarathustra4/Linear-move-generator/assets/68013193/6ae8b079-8db4-4bec-8e7b-64e1062364ef)
+![image](https://github.com/Zarathustra4/Linear-move-generator/assets/68013193/3aa5aa44-7b0c-4498-863e-b777936e53bc)
+
+![image](https://github.com/Zarathustra4/Linear-move-generator/assets/68013193/9c3f7ce5-dd6a-4737-9f8f-d46e09efb31b)
+
+![image](https://github.com/Zarathustra4/Linear-move-generator/assets/68013193/6634581e-7b53-49b2-91a7-272fd71c8ec6)
+
+You can change the parameters in ```cutShpereMove.cpp``` in `main` function.
